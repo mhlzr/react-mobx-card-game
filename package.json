@@ -1,0 +1,26 @@
+{
+  "name": "aoe-card-game",
+  "version": "1.3.0",
+  "description": "AOE Card Game coding challenge",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhlzr/aoe-card-game.git"
+  },
+  "keywords": [
+    "aoe",
+    "card",
+    "game",
+    "coding",
+    "challenge"
+  ],
+  "author": "Matthieu Holzer <matthieuholzer@gmx.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhlzr/aoe-card-game/issues"
+  },
+  "homepage": "https://github.com/mhlzr/aoe-card-game#readme"
+}
