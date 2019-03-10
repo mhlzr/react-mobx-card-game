@@ -1,10 +1,11 @@
 /** @jsx jsx */
-import React, { ReactElement, FunctionComponent } from 'react';
+import React, { ReactElement, FunctionComponent, useEffect, useState } from 'react';
 import { css, jsx } from '@emotion/core';
 
 import { CardDetails } from '../CardDetails/CardDetails';
 import { CardControls } from '../CardControls/CardControls';
 import { CardOverview } from '../CardOverview/CardOverview';
+import { fetchPlayerData } from '../../api/players';
 
 const cardGameLayout = css`
     display: grid;
@@ -17,6 +18,18 @@ const cardGameLayout = css`
 `;
 
 export const CardGame: FunctionComponent = (): ReactElement => {
+
+    const [players, setPlayers] = useState([]);
+
+    const fetchPlayers = async () => {
+        const playerData = await fetchPlayerData();
+        setPlayers(playerData);
+    }
+
+    useEffect(() => {
+        fetchPlayers();
+    }, []);
+
     return (
         <div css={cardGameLayout}>
             <CardDetails />
