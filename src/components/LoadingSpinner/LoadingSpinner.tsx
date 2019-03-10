@@ -1,8 +1,7 @@
-/** @jsx jsx */
 import React, { ReactElement, FunctionComponent } from 'react';
-import { css, jsx, keyframes } from '@emotion/core';
 
-const animation = keyframes`
+
+/*onst animation = keyframes`
   0% {
     transform: rotate(0deg);
   }
@@ -52,6 +51,7 @@ const loadingSpinnerLayout = css`
         width: 5.2em;
     }
 `;
+*/
 
 interface LoadingSpinnerProps {
     children: JSX.Element[] | JSX.Element | string;
@@ -59,7 +59,7 @@ interface LoadingSpinnerProps {
 
 export const LoadingSpinner: FunctionComponent = ({ children }: LoadingSpinnerProps): ReactElement => {
     return (
-        <div css={loadingSpinnerLayout}>
+        <div>
             {children}
         </div>
     )

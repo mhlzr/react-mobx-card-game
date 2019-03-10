@@ -1,3 +1,11 @@
 module.exports = {
-    "plugins": ["emotion", "transform-node-env-inline"]
+    "presets": [
+        "@babel/typescript",
+        "@babel/react"
+    ],
+    "plugins": [
+        "@babel/proposal-class-properties",
+        "@babel/proposal-object-rest-spread",
+        "@babel/plugin-syntax-dynamic-import"
+    ]
 }

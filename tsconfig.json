@@ -4,16 +4,16 @@
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
         "experimentalDecorators": true,
+        "noImplicitAny": true,
         "jsx": "react",
-        "target": "es5",
-        "module": "esnext",
+        "target": "esnext",
+        "allowJs": true,
+        "strict": true,
+        "module": "es6",
         "lib": [
             "esnext",
             "dom"
         ],
-        "sourceMap": true,
-        "types": [
-            "@emotion/core"
-        ]
+        "sourceMap": true
     }
 }

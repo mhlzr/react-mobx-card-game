@@ -1,10 +1,8 @@
-/** @jsx jsx */
 import React, { ReactElement, FunctionComponent } from 'react';
-import { css, jsx } from '@emotion/core';
 
-const headlineLayout = css`
+/*const headlineLayout = css`
     margin: 0;
-`;
+`;*/
 
 interface HeadlineProps {
     children: JSX.Element[] | JSX.Element | string;
@@ -12,7 +10,7 @@ interface HeadlineProps {
 
 export const Headline: FunctionComponent = ({ children }: HeadlineProps): ReactElement => {
     return (
-        <h1 css={headlineLayout}>
+        <h1>
             {children}
         </h1>
     )
