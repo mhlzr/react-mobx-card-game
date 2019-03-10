@@ -1,3 +1,3 @@
 module.exports = {
-    "plugins": ["emotion"]
+    "plugins": ["emotion", "transform-node-env-inline"]
 }

@@ -2,7 +2,7 @@
  * @see https://dev.to/robertcoopercode/using-eslint-and-prettier-in-a-typescript-project-53jb 
  * */
 
- module.exports = {
+module.exports = {
     parser: '@typescript-eslint/parser',  // Specifies the ESLint parser
     extends: [
         'plugin:react/recommended',  // Uses the recommended rules from @eslint-plugin-react
@@ -17,12 +17,15 @@
         jsx: true,  // Allows for the parsing of JSX
     },
     rules: {
-        // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
-        // e.g. "@typescript-eslint/explicit-function-return-type": "off",
+        'emotion/jsx-import': 'error',
+        'emotion/no-vanilla': 'error',
+        'emotion/import-from-emotion': 'error',
+        'emotion/styled-import': 'error'
     },
     settings: {
         react: {
             version: 'detect',  // Tells eslint-plugin-react to automatically detect the version of React to use
         }
-    }
+    },
+    plugins: ['emotion']
 };
