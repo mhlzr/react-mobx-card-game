@@ -1,6 +1,8 @@
 import React, { lazy, Suspense } from 'react';
 import { render } from 'react-dom';
 
+import './index.css';
+
 import { LoadingSpinner } from './components/LoadingSpinner/LoadingSpinner';
 
 const CardGame = lazy(() => import(/* webpackChunkName: "cardgame" */'./components/CardGame/CardGame')

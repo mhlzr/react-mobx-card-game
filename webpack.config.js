@@ -1,4 +1,5 @@
 const path = require('path');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
@@ -20,6 +21,14 @@ module.exports = (env, argv) => {
                     exclude: /node_modules/
                 },
                 {
+                    test: /\.css$/,
+                    use: [
+                        MiniCssExtractPlugin.loader,
+                        'css-loader',
+                        'postcss-loader'
+                    ]
+                },
+                {
                     test: /\.html$/,
                     use: [{
                         loader: 'html-loader',
@@ -38,6 +47,10 @@ module.exports = (env, argv) => {
             path: path.resolve(__dirname, 'dist')
         },
         plugins: [
+            new MiniCssExtractPlugin({
+                filename: "css/[name].[hash:6].css",
+                chunkFilename: "css/[name].[hash:6].css"
+            }),
             new CopyWebpackPlugin([{
                 from: 'src/static',
                 to: 'static'
