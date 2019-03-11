@@ -1,11 +1,12 @@
 import React, { ReactElement, FunctionComponent } from 'react';
+import styled from 'styled-components';
 
-/*const cardTeaserLayout = css`
+const CardTeaserLayout = styled.button`
     padding: 1em;
-`;*/
+`;
 
 export const CardTeaser: FunctionComponent = (): ReactElement => {
     return (
-        <button type="button" aria-pressed="true"></button>
+        <CardTeaserLayout type="button" aria-pressed="true"></CardTeaserLayout>
     )
 }

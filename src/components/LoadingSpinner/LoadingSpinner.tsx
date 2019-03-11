@@ -1,7 +1,7 @@
 import React, { ReactElement, FunctionComponent } from 'react';
+import styled, { keyframes } from 'styled-components';
 
-
-/*onst animation = keyframes`
+const animation = keyframes`
   0% {
     transform: rotate(0deg);
   }
@@ -10,7 +10,7 @@ import React, { ReactElement, FunctionComponent } from 'react';
   }
 `;
 
-const loadingSpinnerLayout = css`
+const LoadingSpinnerLayout = styled.div`
     border-radius: 50%;
     box-shadow: inset 0 0 0 1em;
     color: var(--secondary-color);
@@ -51,7 +51,6 @@ const loadingSpinnerLayout = css`
         width: 5.2em;
     }
 `;
-*/
 
 interface LoadingSpinnerProps {
     children: JSX.Element[] | JSX.Element | string;
@@ -59,9 +58,9 @@ interface LoadingSpinnerProps {
 
 export const LoadingSpinner: FunctionComponent = ({ children }: LoadingSpinnerProps): ReactElement => {
     return (
-        <div>
+        <LoadingSpinnerLayout>
             {children}
-        </div>
+        </LoadingSpinnerLayout>
     )
 }
 

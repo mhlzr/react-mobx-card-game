@@ -1,11 +1,12 @@
 import React, { ReactElement, FunctionComponent, useEffect, useState } from 'react';
+import styled from 'styled-components';
 
 import { CardDetails } from '../CardDetails/CardDetails';
 import { CardControls } from '../CardControls/CardControls';
 import { CardOverview } from '../CardOverview/CardOverview';
 import { fetchPlayerData } from '../../api/players';
 
-/*const cardGameLayout = css`
+const CardGameLayout = styled.div`
     display: grid;
     grid-gap: 1em;
     grid-template-columns: 2fr 1fr;
@@ -13,7 +14,7 @@ import { fetchPlayerData } from '../../api/players';
         "details controls"
         "overview controls";
     padding: 1em;
-`;*/
+`;
 
 export const CardGame: FunctionComponent = (): ReactElement => {
 
@@ -29,10 +30,10 @@ export const CardGame: FunctionComponent = (): ReactElement => {
     }, []);
 
     return (
-        <div>
+        <CardGameLayout>
             <CardDetails />
             <CardControls />
             <CardOverview />
-        </div>
+        </CardGameLayout>
     )
 }

@@ -1,8 +1,9 @@
 import React, { ReactElement, FunctionComponent } from 'react';
+import styled from 'styled-components';
 
-/*const headlineLayout = css`
+const HeadlineLayout = styled.h1`
     margin: 0;
-`;*/
+`;
 
 interface HeadlineProps {
     children: JSX.Element[] | JSX.Element | string;
@@ -10,8 +11,8 @@ interface HeadlineProps {
 
 export const Headline: FunctionComponent = ({ children }: HeadlineProps): ReactElement => {
     return (
-        <h1>
+        <HeadlineLayout>
             {children}
-        </h1>
+        </HeadlineLayout>
     )
 }

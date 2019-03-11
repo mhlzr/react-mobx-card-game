@@ -1,4 +1,8 @@
 import React, { FunctionComponent, ReactElement } from 'react';
+import styled from 'styled-components';
+
+const ButtonLayout = styled.button`
+`;
 
 interface ButtonProps {
     type?: string;
@@ -8,6 +12,6 @@ interface ButtonProps {
 
 export const Button: FunctionComponent<ButtonProps> = ({ type, onClick, children }: ButtonProps): ReactElement => {
     return (
-        <button type={type} onClick={onClick}>{children}</button>
+        <ButtonLayout type={type} onClick={onClick}>{children}</ButtonLayout>
     );
 }

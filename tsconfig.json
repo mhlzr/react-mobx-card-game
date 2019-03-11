@@ -6,10 +6,10 @@
         "experimentalDecorators": true,
         "noImplicitAny": true,
         "jsx": "react",
-        "target": "esnext",
+        "target": "esNext",
         "allowJs": true,
         "strict": true,
-        "module": "es6",
+        "module": "esNext",
         "lib": [
             "esnext",
             "dom"
