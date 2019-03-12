@@ -2,7 +2,7 @@ import React, { ReactElement, FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Player } from 'src/models/Player';
 
-const CardTeaserLayout = styled.button`
+const StyledButton = styled.button`
     appearance: none;
     background-color: transparent;
     border: 1px solid currentColor;
@@ -12,6 +12,7 @@ const CardTeaserLayout = styled.button`
     font-style: normal;
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
     padding: 2em;
     text-align: left;
     width: 100%;
@@ -45,10 +46,10 @@ interface CardTeaserProps {
 export const CardTeaser: FunctionComponent<CardTeaserProps> = ({ player }): ReactElement => {
     const { name, alias, asset } = player;
     return (
-        <CardTeaserLayout type="button" aria-pressed="true">
+        <StyledButton type="button" aria-pressed="true">
             <Name>{name}</Name>
             <Alias>{alias}</Alias>
             <Asset>{asset}</Asset>
-        </CardTeaserLayout>
+        </StyledButton>
     )
 }

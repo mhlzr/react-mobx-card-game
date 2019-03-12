@@ -9,8 +9,8 @@ const CardGame = lazy(() => import(/* webpackChunkName: "cardgame" */'./componen
     .then(({ CardGame }) => ({ default: CardGame })));
 
 render(
-    <div>
+    <>
         <Suspense fallback={<LoadingSpinner />}>
             <CardGame />
         </Suspense >
-    </div >, document.getElementsByTagName('main')[0]);
+    </>, document.getElementsByTagName('main')[0]);

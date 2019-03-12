@@ -6,14 +6,15 @@ import { CardControls } from '../CardControls/CardControls';
 import { CardOverview } from '../CardOverview/CardOverview';
 import { fetchPlayers } from '../../api/players';
 
-const CardGameLayout = styled.div`
+const StyledDiv = styled.div`
     display: grid;
     grid-gap: 1em;
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
         "details controls"
-        "overview controls";
+        "overview .";
     padding: 1em;
+    width: 100vw;
 `;
 
 export const CardGame: FunctionComponent = (): ReactElement => {
@@ -29,10 +30,10 @@ export const CardGame: FunctionComponent = (): ReactElement => {
     }, []);
 
     return (
-        <CardGameLayout>
+        <StyledDiv>
             <CardDetails />
             <CardControls />
             <CardOverview players={players} />
-        </CardGameLayout>
+        </StyledDiv>
     )
 }

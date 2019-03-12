@@ -3,15 +3,16 @@ import styled from 'styled-components';
 
 import { Headline } from '../Headline/Headline';
 
-const Section = styled.section`
+const StyledSection = styled.section`
     border: 1px solid var(--secondary-color);
+    grid-area: details;
     padding: 1em;
 `;
 
 export const CardDetails: FunctionComponent = (): ReactElement => {
     return (
-        <Section>
+        <StyledSection>
             <Headline>CardDetails</Headline>
-        </Section>
+        </StyledSection>
     )
 }

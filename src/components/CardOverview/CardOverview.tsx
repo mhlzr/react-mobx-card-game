@@ -5,19 +5,25 @@ import { Headline } from '../Headline/Headline';
 import { CardTeaser } from '../CardTeaser/CardTeaser';
 import { Player, PlayerType } from 'src/models/Player';
 
-const Section = styled.section`
+const StyledSection = styled.section`
+    grid-area: overview;
     padding: 1em;
 `;
 
-const PlayerList = styled.ul`
+const StyledList = styled.ul`
     display: grid;
     grid-auto-rows: 1fr;
     grid-gap: 1em;
-    grid-template-columns: repeat(auto-fill, calc(33% - 1em));
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     list-style: none;
     margin: 1em 0 0 0;
     padding: 0;
+`;
+
+const StyledListItem = styled.li`
+    display: block;
+    overflow: hidden;
 `;
 
 interface CardOverviewProps {
@@ -26,15 +32,15 @@ interface CardOverviewProps {
 
 export const CardOverview: FunctionComponent<CardOverviewProps> = ({ players }): ReactElement => {
     return (
-        <Section>
+        <StyledSection>
             <Headline>CardOverview</Headline>
-            <PlayerList>
+            <StyledList>
                 {players.map((player: PlayerType, index) => (
-                    <li key={index}>
+                    <StyledListItem key={index}>
                         <CardTeaser player={player}></CardTeaser>
-                    </li>))
+                    </StyledListItem>))
                 }
-            </PlayerList>
-        </Section>
+            </StyledList>
+        </StyledSection>
     )
 }
