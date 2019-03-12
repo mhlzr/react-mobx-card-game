@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 const ButtonLayout = styled.button`
     appearance: none;
-    border: 1px solid var(--secondary-color);
+    background-color: transparent;
+    border: 1px solid currentColor;
+    color: var(--secondary-color);
 `;
 
 interface ButtonProps {

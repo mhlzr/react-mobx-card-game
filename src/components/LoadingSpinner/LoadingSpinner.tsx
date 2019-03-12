@@ -56,7 +56,7 @@ interface LoadingSpinnerProps {
     children: JSX.Element[] | JSX.Element | string;
 }
 
-export const LoadingSpinner: FunctionComponent = ({ children }: LoadingSpinnerProps): ReactElement => {
+export const LoadingSpinner: FunctionComponent<LoadingSpinnerProps> = ({ children }: LoadingSpinnerProps): ReactElement => {
     return (
         <LoadingSpinnerLayout>
             {children}

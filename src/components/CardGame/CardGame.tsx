@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { CardDetails } from '../CardDetails/CardDetails';
 import { CardControls } from '../CardControls/CardControls';
 import { CardOverview } from '../CardOverview/CardOverview';
-import { fetchPlayerData } from '../../api/players';
+import { fetchPlayers } from '../../api/players';
 
 const CardGameLayout = styled.div`
     display: grid;
@@ -20,20 +20,19 @@ export const CardGame: FunctionComponent = (): ReactElement => {
 
     const [players, setPlayers] = useState([]);
 
-    const fetchPlayers = async () => {
-        const playerData = await fetchPlayerData();
-        setPlayers(playerData);
-    }
-
     useEffect(() => {
-        fetchPlayers();
+        const fetch = async () => {
+            const players = await fetchPlayers();
+            setPlayers(players);
+        }
+        fetch();
     }, []);
 
     return (
         <CardGameLayout>
             <CardDetails />
             <CardControls />
-            <CardOverview />
+            <CardOverview players={players} />
         </CardGameLayout>
     )
 }

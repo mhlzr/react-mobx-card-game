@@ -9,7 +9,7 @@ interface HeadlineProps {
     children: JSX.Element[] | JSX.Element | string;
 }
 
-export const Headline: FunctionComponent = ({ children }: HeadlineProps): ReactElement => {
+export const Headline: FunctionComponent<HeadlineProps> = ({ children }: HeadlineProps): ReactElement => {
     return (
         <HeadlineLayout>
             {children}

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Headline } from '../Headline/Headline';
 
 const Section = styled.section`
-    border: 2px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     padding: 1em;
 `;
 
