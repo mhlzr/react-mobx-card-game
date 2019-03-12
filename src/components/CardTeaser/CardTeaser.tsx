@@ -2,30 +2,26 @@ import React, { ReactElement, FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Player } from 'src/models/Player';
 
-const StyledButton = styled.button`
-    appearance: none;
-    background-color: transparent;
+// An actual button caused rendering issues :(
+const StyledPseudoButton = styled.div`
     border: 1px solid currentColor;
     color: var(--secondary-color);
-    display: flex;
+    cursor: pointer;
+    display: block;
     font-family: inherit;
-    font-style: normal;
-    flex-direction: column;
+    font-size: 2em;
     height: 100%;
-    overflow: hidden;
-    padding: 2em;
-    text-align: left;
+    padding: 1em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     width: 100%;
 `;
 
 const Text = styled.span`
     display: block;
-    font-size: 3em;
-    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 100%;
 `
 
 const Name = styled(Text)`
@@ -43,13 +39,13 @@ interface CardTeaserProps {
     selected?: boolean
 }
 
-export const CardTeaser: FunctionComponent<CardTeaserProps> = ({ player }): ReactElement => {
+export const CardTeaser: FunctionComponent<CardTeaserProps> = ({ player, selected }): ReactElement => {
     const { name, alias, asset } = player;
     return (
-        <StyledButton type="button" aria-pressed="true">
+        <StyledPseudoButton aria-pressed={selected} tabindex="0" role="button">
             <Name>{name}</Name>
             <Alias>{alias}</Alias>
             <Asset>{asset}</Asset>
-        </StyledButton>
+        </StyledPseudoButton>
     )
 }

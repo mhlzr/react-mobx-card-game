@@ -17,9 +17,13 @@
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     background-color: var(--primary-color);
-    box-sizing: border-box;
+
     color: var(--secondary-color);
     font-family: 'Courier New', Courier, monospace
 }

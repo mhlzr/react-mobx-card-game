@@ -7,7 +7,7 @@ import { Player, PlayerType } from 'src/models/Player';
 
 const StyledSection = styled.section`
     grid-area: overview;
-    padding: 1em;
+    padding: 1em 0;
 `;
 
 const StyledList = styled.ul`
@@ -37,7 +37,7 @@ export const CardOverview: FunctionComponent<CardOverviewProps> = ({ players }):
             <StyledList>
                 {players.map((player: PlayerType, index) => (
                     <StyledListItem key={index}>
-                        <CardTeaser player={player}></CardTeaser>
+                        <CardTeaser player={player} selected={false}></CardTeaser>
                     </StyledListItem>))
                 }
             </StyledList>
