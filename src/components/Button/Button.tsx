@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactElement } from 'react';
 import styled from 'styled-components';
 
-const ButtonLayout = styled.button`
+const StyledButton = styled.button`
     appearance: none;
     background-color: transparent;
     border: 1px solid currentColor;
@@ -16,6 +16,6 @@ interface ButtonProps {
 
 export const Button: FunctionComponent<ButtonProps> = ({ type, onClick, children }: ButtonProps): ReactElement => {
     return (
-        <ButtonLayout type={type} onClick={onClick}>{children}</ButtonLayout>
+        <StyledButton type={type} onClick={onClick}>{children}</StyledButton>
     );
 }

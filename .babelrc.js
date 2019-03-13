@@ -4,9 +4,10 @@ module.exports = {
         "@babel/react"
     ],
     "plugins": [
-        "babel-plugin-styled-components",
-        "@babel/proposal-class-properties",
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
         "@babel/proposal-object-rest-spread",
-        "@babel/plugin-syntax-dynamic-import"
+        "@babel/plugin-syntax-dynamic-import",
+        "babel-plugin-styled-components"
     ]
 }

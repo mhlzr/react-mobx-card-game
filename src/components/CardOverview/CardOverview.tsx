@@ -1,9 +1,11 @@
 import React, { ReactElement, FunctionComponent } from 'react';
 import styled from 'styled-components';
+import { observer, inject } from 'mobx-react';
 
 import { Headline } from '../Headline/Headline';
 import { CardTeaser } from '../CardTeaser/CardTeaser';
 import { Player, PlayerType } from 'src/models/Player';
+import { CardGameStore } from '../../stores/CardGameStore';
 
 const StyledSection = styled.section`
     grid-area: overview;
@@ -28,19 +30,26 @@ const StyledListItem = styled.li`
 
 interface CardOverviewProps {
     players: Array<Player>;
+    store: CardGameStore;
 }
 
-export const CardOverview: FunctionComponent<CardOverviewProps> = ({ players }): ReactElement => {
+export const CardOverview: FunctionComponent<CardOverviewProps> = inject('store')(observer(({ store, players }: CardOverviewProps): ReactElement => {
+
+    console.log(store.player);
+    const onPlayerSelect = (player: Player) => {
+        store.player = player;
+    }
+
     return (
         <StyledSection>
             <Headline>CardOverview</Headline>
             <StyledList>
-                {players.map((player: PlayerType, index) => (
+                {players.map((player: PlayerType, index: number) => (
                     <StyledListItem key={index}>
-                        <CardTeaser player={player} selected={false}></CardTeaser>
+                        <CardTeaser player={player} selected={store.player === player} onSelect={onPlayerSelect}></CardTeaser>
                     </StyledListItem>))
                 }
             </StyledList>
         </StyledSection>
     )
-}
+}));

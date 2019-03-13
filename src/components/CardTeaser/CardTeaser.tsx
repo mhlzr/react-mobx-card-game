@@ -36,13 +36,14 @@ const Asset = styled(Text)`
 
 interface CardTeaserProps {
     player: Player,
-    selected?: boolean
+    selected?: boolean,
+    onSelect: (player: Player) => void,
 }
 
-export const CardTeaser: FunctionComponent<CardTeaserProps> = ({ player, selected }): ReactElement => {
+export const CardTeaser: FunctionComponent<CardTeaserProps> = ({ player, selected, onSelect }): ReactElement => {
     const { name, alias, asset } = player;
     return (
-        <StyledPseudoButton aria-pressed={selected} tabindex="0" role="button">
+        <StyledPseudoButton aria-pressed={selected} tabIndex={0} role="button" onClick={() => onSelect(player)}>
             <Name>{name}</Name>
             <Alias>{alias}</Alias>
             <Asset>{asset}</Asset>

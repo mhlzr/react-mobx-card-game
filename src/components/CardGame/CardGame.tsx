@@ -1,10 +1,13 @@
 import React, { ReactElement, FunctionComponent, useEffect, useState } from 'react';
 import styled from 'styled-components';
+import { Provider } from 'mobx-react';
 
 import { CardDetails } from '../CardDetails/CardDetails';
 import { CardControls } from '../CardControls/CardControls';
 import { CardOverview } from '../CardOverview/CardOverview';
 import { fetchPlayers } from '../../api/players';
+
+import CardGameStore from '../../stores/CardGameStore';
 
 const StyledDiv = styled.div`
     display: grid;
@@ -30,10 +33,12 @@ export const CardGame: FunctionComponent = (): ReactElement => {
     }, []);
 
     return (
-        <StyledDiv>
-            <CardDetails />
-            <CardControls />
-            <CardOverview players={players} />
-        </StyledDiv>
+        <Provider store={CardGameStore}>
+            <StyledDiv>
+                <CardDetails />
+                <CardControls />
+                <CardOverview players={players} />
+            </StyledDiv>
+        </Provider>
     )
 }
