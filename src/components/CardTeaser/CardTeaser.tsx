@@ -1,26 +1,18 @@
 import React, { ReactElement, FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Player } from 'src/models/Player';
+import { buttonReset } from '../Button/Button';
 
 // An actual button caused rendering issues :(
 const StyledPseudoButton = styled.div`
-    border: 1px solid currentColor;
-    color: var(--secondary-color);
-    cursor: pointer;
+    ${buttonReset}
     display: block;
-    font-family: inherit;
     font-size: 1.2em;
     height: 100%;
     padding: 1em;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
-
-    &[aria-pressed=true]{
-        background-color: var(--secondary-color);
-        color: var(--primary-color);
-
-    }
 `;
 
 const Text = styled.span`

@@ -1,7 +1,10 @@
 import React, { ReactElement, FunctionComponent, StatelessComponent } from 'react';
 import styled from 'styled-components';
+import { observer, inject } from 'mobx-react';
+
 import { Headline } from '../Headline/Headline';
 import { Button } from '../Button/Button';
+import { CardGameStore, PLAYER_SORTATION } from '../../stores/CardGameStore';
 
 const StyledSection = styled.section`
     border: 1px solid var(--secondary-color);
@@ -9,24 +12,43 @@ const StyledSection = styled.section`
     padding: 1em;
 `;
 
-const Controls = styled.form`
-    display: flex;
-    flex-wrap: wrap;
+const Controls = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 1em;
+
+    button:last-child {
+        grid-column: 1 / 3; 
+    }
 `;
 
-const StyledButton = styled(Button)`
-    flex-basis: ${({ primary }) => primary ? '100%' : '50%'};
-`;
+interface CardControlsProps {
+    store: CardGameStore
+}
 
-export const CardControls: FunctionComponent = (): ReactElement => {
+export const CardControls: FunctionComponent<CardControlsProps> = inject('store')(observer(({ store }: CardControlsProps): ReactElement => {
+
+    const onSortAscendingClick = () => {
+        store.playerSortation = PLAYER_SORTATION.ASCENDING;
+    }
+
+    const onSortDescdendingClick = () => {
+        store.playerSortation = PLAYER_SORTATION.DESCENDING;
+    }
+
+    const onSubmitClick = () => {
+        store.savePlayerSelection();
+    };
+
     return (
         <StyledSection>
             <Headline>Controls</Headline>
             <Controls>
-                <StyledButton>Sort Asc</StyledButton>
-                <StyledButton>Sort Desc</StyledButton>
-                <StyledButton type="submit" primary="true">Submit</StyledButton>
+                <Button onClick={onSortAscendingClick} selected={store.playerSortation === PLAYER_SORTATION.ASCENDING}>Sort Asc</Button>
+                <Button onClick={onSortDescdendingClick} selected={store.playerSortation === PLAYER_SORTATION.DESCENDING}>Sort Desc</Button>
+                <Button disabled={!store.player || store.isSaving} onClick={onSubmitClick}>Submit</Button>
             </Controls>
         </StyledSection>
     )
-}
+}));

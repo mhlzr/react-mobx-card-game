@@ -34,7 +34,6 @@ interface CardOverviewProps {
 
 export const CardOverview: FunctionComponent<CardOverviewProps> = inject('store')(observer(({ store }: CardOverviewProps): ReactElement => {
 
-    console.log(store.player);
     const onPlayerSelect = (player: Player) => {
         store.player = player;
     }
