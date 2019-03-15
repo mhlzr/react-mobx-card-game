@@ -5,9 +5,8 @@ import { Provider } from 'mobx-react';
 import { CardDetails } from '../CardDetails/CardDetails';
 import { CardControls } from '../CardControls/CardControls';
 import { CardOverview } from '../CardOverview/CardOverview';
-import { fetchPlayers } from '../../api/players';
 
-import CardGameStore from '../../stores/CardGameStore';
+import cardGameStore from '../../stores/CardGameStore';
 
 const StyledDiv = styled.div`
     display: grid;
@@ -22,22 +21,14 @@ const StyledDiv = styled.div`
 
 export const CardGame: FunctionComponent = (): ReactElement => {
 
-    const [players, setPlayers] = useState([]);
-
-    useEffect(() => {
-        const fetch = async () => {
-            const players = await fetchPlayers();
-            setPlayers(players);
-        }
-        fetch();
-    }, []);
+    cardGameStore.fetchPlayers();
 
     return (
-        <Provider store={CardGameStore}>
+        <Provider store={cardGameStore}>
             <StyledDiv>
                 <CardDetails />
                 <CardControls />
-                <CardOverview players={players} />
+                <CardOverview />
             </StyledDiv>
         </Provider>
     )

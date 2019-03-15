@@ -29,11 +29,10 @@ const StyledListItem = styled.li`
 `;
 
 interface CardOverviewProps {
-    players: Array<Player>;
     store: CardGameStore;
 }
 
-export const CardOverview: FunctionComponent<CardOverviewProps> = inject('store')(observer(({ store, players }: CardOverviewProps): ReactElement => {
+export const CardOverview: FunctionComponent<CardOverviewProps> = inject('store')(observer(({ store }: CardOverviewProps): ReactElement => {
 
     console.log(store.player);
     const onPlayerSelect = (player: Player) => {
@@ -42,9 +41,9 @@ export const CardOverview: FunctionComponent<CardOverviewProps> = inject('store'
 
     return (
         <StyledSection>
-            <Headline>CardOverview</Headline>
+            <Headline>Overview</Headline>
             <StyledList>
-                {players.map((player: PlayerType, index: number) => (
+                {store.players.map((player: PlayerType, index: number) => (
                     <StyledListItem key={index}>
                         <CardTeaser player={player} selected={store.player === player} onSelect={onPlayerSelect}></CardTeaser>
                     </StyledListItem>))

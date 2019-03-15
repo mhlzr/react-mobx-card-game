@@ -9,12 +9,18 @@ const StyledPseudoButton = styled.div`
     cursor: pointer;
     display: block;
     font-family: inherit;
-    font-size: 2em;
+    font-size: 1.2em;
     height: 100%;
     padding: 1em;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
+
+    &[aria-pressed=true]{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+
+    }
 `;
 
 const Text = styled.span`
@@ -23,16 +29,6 @@ const Text = styled.span`
     text-overflow: ellipsis;
     white-space: nowrap;
 `
-
-const Name = styled(Text)`
-`;
-
-const Alias = styled(Text)`
-    margin: 1em 0;
-`;
-
-const Asset = styled(Text)`
-`;
 
 interface CardTeaserProps {
     player: Player,
@@ -44,9 +40,9 @@ export const CardTeaser: FunctionComponent<CardTeaserProps> = ({ player, selecte
     const { name, alias, asset } = player;
     return (
         <StyledPseudoButton aria-pressed={selected} tabIndex={0} role="button" onClick={() => onSelect(player)}>
-            <Name>{name}</Name>
-            <Alias>{alias}</Alias>
-            <Asset>{asset}</Asset>
+            <Text>{name}</Text>
+            <Text>{alias}</Text>
+            <Text>{asset}</Text>
         </StyledPseudoButton>
     )
 }

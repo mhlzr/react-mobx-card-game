@@ -4,8 +4,12 @@ import styled from 'styled-components';
 const StyledButton = styled.button`
     appearance: none;
     background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    text-transform: uppercase;
     border: 1px solid currentColor;
-    color: var(--secondary-color);
 `;
 
 interface ButtonProps {

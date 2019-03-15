@@ -9,11 +9,24 @@ const StyledSection = styled.section`
     padding: 1em;
 `;
 
+const Controls = styled.form`
+    display: flex;
+    flex-wrap: wrap;
+`;
+
+const StyledButton = styled(Button)`
+    flex-basis: ${({ primary }) => primary ? '100%' : '50%'};
+`;
+
 export const CardControls: FunctionComponent = (): ReactElement => {
     return (
         <StyledSection>
-            <Headline>CardControls</Headline>
-            <Button>Some button</Button>
+            <Headline>Controls</Headline>
+            <Controls>
+                <StyledButton>Sort Asc</StyledButton>
+                <StyledButton>Sort Desc</StyledButton>
+                <StyledButton type="submit" primary="true">Submit</StyledButton>
+            </Controls>
         </StyledSection>
     )
 }
