@@ -33,4 +33,17 @@ body {
     min-height: 100vh;
 }
 
+noscript {
+    display: inline-block;
+    padding: 1em;
+}
 
+a:link,
+a:active,
+a:visited {
+    color: var(--secondary-color);
+}
+
+a:hover {
+    text-decoration: none;
+}
