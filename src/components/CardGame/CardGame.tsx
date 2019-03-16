@@ -1,4 +1,4 @@
-import React, { ReactElement, FunctionComponent, useEffect, useState } from 'react';
+import React, { ReactElement, FunctionComponent } from 'react';
 import { Provider } from 'mobx-react';
 
 import { CardGameStore } from '../../stores/CardGameStore';

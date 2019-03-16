@@ -1,7 +1,7 @@
 import React, { FunctionComponent, ReactElement } from 'react';
 import styled from 'styled-components';
 
-export const buttonReset = () => `
+const StyledButton = styled.button`
     appearance: none;
     background-color: transparent;
     border: 1px solid currentColor;
@@ -24,13 +24,8 @@ export const buttonReset = () => `
     }
 `;
 
-const StyledButton = styled.button`
-    ${buttonReset}
-    text-transform: uppercase;
-    border: 1px solid currentColor;
-`;
-
 interface ButtonProps {
+    className?: string;
     type?: string;
     disabled?: boolean;
     onClick?(): void;
@@ -38,8 +33,8 @@ interface ButtonProps {
     selected?: boolean,
 }
 
-export const Button: FunctionComponent<ButtonProps> = ({ type, disabled = false, selected = false, onClick, children }: ButtonProps): ReactElement => {
+export const Button: FunctionComponent<ButtonProps> = ({ className, type, disabled = false, selected = false, onClick, children }: ButtonProps): ReactElement => {
     return (
-        <StyledButton disabled={disabled} type={type} aria-pressed={selected} onClick={onClick}>{children}</StyledButton>
+        <StyledButton className={className} disabled={disabled} type={type} aria-pressed={selected} onClick={onClick}>{children}</StyledButton>
     );
 }

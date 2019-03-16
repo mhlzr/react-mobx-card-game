@@ -25,6 +25,8 @@ const StyledList = styled.ul`
 const StyledListItem = styled.li`
     display: block;
     overflow: hidden;
+    // So the content (e.g.: Button) can have a visible outline
+    padding: 4px;
 `;
 
 interface CardOverviewProps {

@@ -13,15 +13,19 @@ const StyledSection = styled.section`
     padding: 1em;
 `;
 
+const StyledButton = styled(Button)`
+    text-transform: uppercase;
+
+    &:last-child {
+        grid-column: 1 / 3; 
+    }
+`;
+
 const Controls = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
     margin-top: 1em;
-
-    button:last-child {
-        grid-column: 1 / 3; 
-    }
 `;
 
 interface CardControlsProps {
@@ -47,12 +51,12 @@ export const CardControls: FunctionComponent<CardControlsProps> = inject('store'
         <StyledSection>
             <Headline>Controls</Headline>
             <Controls>
-                <Button onClick={onSortAscendingClick} selected={store.playerSortation === PLAYER_SORTATION.ASCENDING}>Sort Asc</Button>
-                <Button onClick={onSortDescdendingClick} selected={store.playerSortation === PLAYER_SORTATION.DESCENDING}>Sort Desc</Button>
-                <Button disabled={!player || isSaving} onClick={onSubmitClick}>
+                <StyledButton onClick={onSortAscendingClick} selected={store.playerSortation === PLAYER_SORTATION.ASCENDING}>Sort Asc</StyledButton>
+                <StyledButton onClick={onSortDescdendingClick} selected={store.playerSortation === PLAYER_SORTATION.DESCENDING}>Sort Desc</StyledButton>
+                <StyledButton disabled={!player || isSaving} onClick={onSubmitClick}>
                     {isSaving && <LoadingSpinner />}
                     {!isSaving && 'Submit'}
-                </Button>
+                </StyledButton>
             </Controls>
         </StyledSection>
     )

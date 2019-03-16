@@ -1,22 +1,17 @@
 import React, { ReactElement, FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Player } from 'src/models/Player';
-import { buttonReset } from '../Button/Button';
+import { Button } from '../Button/Button';
 
-// An actual button caused rendering issues :(
-const StyledPseudoButton = styled.div`
-    ${buttonReset}
+const StyledButton = styled(Button)`
     display: block;
     font-size: 1.2em;
     height: 100%;
     padding: 1em;
+    text-align: left;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
-
-    &:focus {
-        outline: 2px solid green;
-    }
 `;
 
 const Text = styled.span`
@@ -34,11 +29,12 @@ interface CardTeaserProps {
 
 export const CardTeaser: FunctionComponent<CardTeaserProps> = ({ player, selected, onSelect }): ReactElement => {
     const { name, alias, asset } = player;
+    console.log(selected);
     return (
-        <StyledPseudoButton aria-pressed={selected} tabIndex={0} role="button" onClick={() => onSelect(player)}>
+        <StyledButton selected={selected} tabIndex={0} onClick={() => onSelect(player)}>
             <Text>{name}</Text>
             <Text>{alias}</Text>
             <Text>{asset}</Text>
-        </StyledPseudoButton>
+        </StyledButton>
     )
 }
