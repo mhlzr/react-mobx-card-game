@@ -1,6 +1,11 @@
 import { observable, flow, action, computed } from 'mobx';
 import { Player } from '../models/Player';
-import { fetchPlayers, savePlayerSelection } from '../api/players';
+import { fetchPlayers, savePlayerSelection, PlayerSelectionSavingPayload } from '../api/players';
+
+export enum HTTP_STATUS_RESPONSE {
+    SUCCESS = 'success',
+    ERROR = 'error'
+}
 
 export enum PLAYER_SORTATION {
     ASCENDING,
@@ -36,11 +41,14 @@ export class CardGameStore {
         this.isSaving = true;
 
         try {
-            const response = yield savePlayerSelection();
-            console.log('Done');
+            const payload: PlayerSelectionSavingPayload = { player: this.player };
+            const response = yield savePlayerSelection(payload);
+            if (response.status !== HTTP_STATUS_RESPONSE.SUCCESS) {
+                throw new Error('Error saving playerSelection')
+            }
         }
         catch (error) {
-            console.error('Could not save playerSelection');
+            console.error(error, 'Could not save playerSelection');
         }
         finally {
             this.isSaving = false;
