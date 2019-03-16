@@ -1,15 +1,17 @@
 import React, { ReactElement, FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Player } from 'src/models/Player';
-import { Button, ButtonProps } from '../Button/Button';
+import { Button } from '../Button/Button';
 
 const StyledButton = styled(Button)`
     display: block;
     font-size: 1.2em;
     height: 100%;
     padding: 1em;
+    position: relative;
     text-align: left;
     text-overflow: ellipsis;
+    transform-style: preserve-3d;
     white-space: nowrap;
     width: 100%;
 `;

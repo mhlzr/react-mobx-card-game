@@ -27,6 +27,13 @@ const StyledListItem = styled.li`
     overflow: hidden;
     // So the content (e.g.: Button) can have a visible outline
     padding: 4px;
+    transition: 0.16s transform cubic-bezier(.17,.67,.05,1.02);
+   
+    &:hover,
+    &:focus,
+    &:focus-within {
+        transform: scale(1.06)
+    }
 `;
 
 interface CardOverviewProps {

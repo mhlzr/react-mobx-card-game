@@ -22,6 +22,7 @@ const Container = styled.div`
     grid-gap: 1em;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: ${({ player }) => player ? GRID_LAYOUT_WITH_SELECTED_PLAYER : GRID_LAYOUT_WITHOUT_SELECTED_PLAYER};
+    max-width: 100em;
     padding: 1em;
     width: 100vw;
 `;
