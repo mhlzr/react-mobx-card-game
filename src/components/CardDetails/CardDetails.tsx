@@ -1,6 +1,7 @@
 import React, { ReactElement, FunctionComponent } from 'react';
 import { observer, inject } from 'mobx-react';
 import styled from 'styled-components';
+import { Spring } from 'react-spring/renderprops';
 
 import { Headline } from '../Headline/Headline';
 import { CardGameStore } from 'src/stores/CardGameStore';
@@ -9,6 +10,7 @@ const Section = styled.section`
     border: 1px solid var(--secondary-color);
     grid-area: details;
     padding: 1em;
+    overflow: hidden;
 `;
 
 const List = styled.ul`
@@ -35,14 +37,17 @@ export const CardDetails: FunctionComponent<CardDetailsProps> = inject('store')(
     if (!player) {
         return null;
     }
+
     return (
-        <Section>
-            <Headline>Details</Headline>
-            <List>
-                <StyledListItem>{player.name}</StyledListItem>
-                <StyledListItem>{player.alias}</StyledListItem>
-                <StyledListItem>{player.asset}</StyledListItem>
-            </List>
-        </Section>
+        <Spring from={{ opacity: 0, maxHeight: '0' }} to={{ opacity: 1, maxHeight: 'auto' }}>{props =>
+            <Section style={props}>
+                <Headline>Details</Headline>
+                <List>
+                    <StyledListItem>{player.name}</StyledListItem>
+                    <StyledListItem>{player.alias}</StyledListItem>
+                    <StyledListItem>{player.asset}</StyledListItem>
+                </List>
+            </Section>
+        }</Spring>
     )
 }));
