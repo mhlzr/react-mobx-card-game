@@ -9,7 +9,6 @@ import { CardGameStore } from '../../stores/CardGameStore';
 
 const StyledSection = styled.section`
     grid-area: overview;
-    padding: 1em 0;
 `;
 
 const StyledList = styled.ul`

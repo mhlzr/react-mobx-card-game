@@ -13,6 +13,10 @@ const StyledPseudoButton = styled.div`
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 100%;
+
+    &:focus {
+        outline: 2px solid green;
+    }
 `;
 
 const Text = styled.span`

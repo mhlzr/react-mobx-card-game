@@ -55,5 +55,3 @@ export class CardGameStore {
         }
     }
 }
-
-export default new CardGameStore();

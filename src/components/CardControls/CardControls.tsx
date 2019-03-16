@@ -5,6 +5,7 @@ import { observer, inject } from 'mobx-react';
 import { Headline } from '../Headline/Headline';
 import { Button } from '../Button/Button';
 import { CardGameStore, PLAYER_SORTATION } from '../../stores/CardGameStore';
+import { LoadingSpinner } from '../LoadingSpinner/LoadingSpinner';
 
 const StyledSection = styled.section`
     border: 1px solid var(--secondary-color);
@@ -28,6 +29,7 @@ interface CardControlsProps {
 }
 
 export const CardControls: FunctionComponent<CardControlsProps> = inject('store')(observer(({ store }: CardControlsProps): ReactElement => {
+    const { player, isSaving } = store;
 
     const onSortAscendingClick = () => {
         store.playerSortation = PLAYER_SORTATION.ASCENDING;
@@ -47,7 +49,10 @@ export const CardControls: FunctionComponent<CardControlsProps> = inject('store'
             <Controls>
                 <Button onClick={onSortAscendingClick} selected={store.playerSortation === PLAYER_SORTATION.ASCENDING}>Sort Asc</Button>
                 <Button onClick={onSortDescdendingClick} selected={store.playerSortation === PLAYER_SORTATION.DESCENDING}>Sort Desc</Button>
-                <Button disabled={!store.player || store.isSaving} onClick={onSubmitClick}>Submit</Button>
+                <Button disabled={!player || isSaving} onClick={onSubmitClick}>
+                    {isSaving && <LoadingSpinner />}
+                    {!isSaving && 'Submit'}
+                </Button>
             </Controls>
         </StyledSection>
     )

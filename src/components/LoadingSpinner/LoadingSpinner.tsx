@@ -25,16 +25,16 @@ const Circle = styled.div`
     border-right-color: currentColor;
     color: inherit;
     font-size: 1.5em;
-    height: 1em;
-    margin: 0 0 0.5em -0.5em;
-    width: 1em;
+    height: 0.8em;
+    margin-left: -0.5em;
+    width: 0.8em;
     will-change: transform;
 `;
 
 
 interface LoadingSpinnerProps {
     className?: string;
-    children: JSX.Element[] | JSX.Element | string;
+    children?: JSX.Element[] | JSX.Element | string;
 }
 
 export const LoadingSpinner: FunctionComponent<LoadingSpinnerProps> = ({ className, children }: LoadingSpinnerProps): ReactElement => {
