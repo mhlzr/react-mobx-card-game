@@ -22,7 +22,6 @@ export class CardGameStore {
     @observable isFetching: Boolean = false;
     @observable isSaving: Boolean = false;
 
-
     fetchPlayers = flow(function* (this: CardGameStore) {
         this.isFetching = true;
 
