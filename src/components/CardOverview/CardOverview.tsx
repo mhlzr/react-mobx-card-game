@@ -7,11 +7,11 @@ import { CardTeaser } from '../CardTeaser/CardTeaser';
 import { Player, PlayerType } from 'src/models/Player';
 import { CardGameStore } from '../../stores/CardGameStore';
 
-const StyledSection = styled.section`
+const Section = styled.section`
     grid-area: overview;
 `;
 
-const StyledList = styled.ul`
+const List = styled.ul`
     display: grid;
     grid-auto-rows: 1fr;
     grid-gap: 1em;
@@ -22,7 +22,7 @@ const StyledList = styled.ul`
     padding: 0;
 `;
 
-const StyledListItem = styled.li`
+const ListItem = styled.li`
     display: block;
     overflow: hidden;
     // So the content (e.g.: Button) can have a visible outline
@@ -47,15 +47,15 @@ export const CardOverview: FunctionComponent<CardOverviewProps> = inject('store'
     }
 
     return (
-        <StyledSection>
+        <Section>
             <Headline>Overview</Headline>
-            <StyledList>
+            <List>
                 {store.players.map((player: PlayerType, index: number) => (
-                    <StyledListItem key={index}>
+                    <ListItem key={index}>
                         <CardTeaser player={player} selected={store.player === player} onSelect={onPlayerSelect}></CardTeaser>
-                    </StyledListItem>))
+                    </ListItem>))
                 }
-            </StyledList>
-        </StyledSection>
+            </List>
+        </Section>
     )
 }));
