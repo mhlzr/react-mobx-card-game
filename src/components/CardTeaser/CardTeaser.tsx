@@ -1,7 +1,7 @@
 import React, { ReactElement, FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { Player } from 'src/models/Player';
-import { Button } from '../Button/Button';
+import { Button, ButtonProps } from '../Button/Button';
 
 const StyledButton = styled(Button)`
     display: block;
@@ -19,7 +19,7 @@ const Text = styled.span`
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-`
+`;
 
 interface CardTeaserProps {
     player: Player,

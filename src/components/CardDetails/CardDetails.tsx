@@ -5,13 +5,13 @@ import styled from 'styled-components';
 import { Headline } from '../Headline/Headline';
 import { CardGameStore } from 'src/stores/CardGameStore';
 
-const StyledSection = styled.section`
+const Section = styled.section`
     border: 1px solid var(--secondary-color);
     grid-area: details;
     padding: 1em;
 `;
 
-const StyledList = styled.ul`
+const List = styled.ul`
     font-size: 1.5em;
     list-style: none;
     margin: 1em 0;
@@ -36,13 +36,13 @@ export const CardDetails: FunctionComponent<CardDetailsProps> = inject('store')(
         return null;
     }
     return (
-        <StyledSection>
+        <Section>
             <Headline>Details</Headline>
-            <StyledList>
+            <List>
                 <StyledListItem>{player.name}</StyledListItem>
                 <StyledListItem>{player.alias}</StyledListItem>
                 <StyledListItem>{player.asset}</StyledListItem>
-            </StyledList>
-        </StyledSection>
+            </List>
+        </Section>
     )
 }));

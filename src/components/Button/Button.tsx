@@ -10,6 +10,7 @@ const StyledButton = styled.button`
     font-family: inherit;
     font-size: 1em;
     font-style: normal;
+    font-weight: normal;
     padding: 0.4em 0.5em;
     transition: opacity 0.08s ease-out;
 
@@ -24,7 +25,7 @@ const StyledButton = styled.button`
     }
 `;
 
-interface ButtonProps {
+export interface ButtonProps {
     className?: string;
     type?: string;
     disabled?: boolean;

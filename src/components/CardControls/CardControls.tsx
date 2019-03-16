@@ -7,7 +7,7 @@ import { Button } from '../Button/Button';
 import { CardGameStore, PLAYER_SORTATION } from '../../stores/CardGameStore';
 import { LoadingSpinner } from '../LoadingSpinner/LoadingSpinner';
 
-const StyledSection = styled.section`
+const Section = styled.section`
     border: 1px solid var(--secondary-color);
     grid-area: controls;
     padding: 1em;
@@ -48,7 +48,7 @@ export const CardControls: FunctionComponent<CardControlsProps> = inject('store'
     };
 
     return (
-        <StyledSection>
+        <Section>
             <Headline>Controls</Headline>
             <Controls>
                 <StyledButton onClick={onSortAscendingClick} selected={store.playerSortation === PLAYER_SORTATION.ASCENDING}>Sort Asc</StyledButton>
@@ -58,6 +58,6 @@ export const CardControls: FunctionComponent<CardControlsProps> = inject('store'
                     {!isSaving && 'Submit'}
                 </StyledButton>
             </Controls>
-        </StyledSection>
+        </Section>
     )
 }));

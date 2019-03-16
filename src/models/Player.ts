@@ -1,16 +1,11 @@
-export interface PlayerType {
-    name: string;
-    alias: string;
-    asset: string;
-}
+import { RawPlayerData } from "src/api/players";
 
-export class Player implements PlayerType {
+export class Player {
     public name: string;
     public alias: string;
     public asset: string;
 
-
-    constructor({ name, alias, asset }: PlayerType) {
+    constructor({ name, alias, asset }: RawPlayerData) {
         this.name = name;
         this.alias = alias;
         this.asset = asset;

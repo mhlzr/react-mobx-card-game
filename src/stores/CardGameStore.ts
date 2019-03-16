@@ -1,4 +1,4 @@
-import { observable, flow, action, computed } from 'mobx';
+import { observable, flow, computed } from 'mobx';
 import { Player } from '../models/Player';
 import { fetchPlayers, savePlayerSelection, PlayerSelectionSavingPayload } from '../api/players';
 
@@ -23,7 +23,7 @@ export class CardGameStore {
     @observable isSaving: Boolean = false;
 
 
-    fetchPlayers = flow(function* () {
+    fetchPlayers = flow(function* (this: CardGameStore) {
         this.isFetching = true;
 
         try {
@@ -37,7 +37,7 @@ export class CardGameStore {
         }
     });
 
-    savePlayerSelection = flow(function* () {
+    savePlayerSelection = flow(function* (this: CardGameStore) {
         this.isSaving = true;
 
         try {
