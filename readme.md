@@ -10,7 +10,7 @@ Run `npm install`
 
 ## Development
 
-Start the parcel development server
+Start the webpack development-server
 
 Run `npm start`
 
@@ -21,3 +21,17 @@ Run `npm run build`
 ## Testing
 
 Run `npm test`
+
+# Technologies being used
+- React
+- Styled-components
+- TypeScript
+- MobX
+- Jest
+- react-spring
+
+# ToDos
+- Add more unit-tests
+- Improve mobx-injections (maybe use mobx-react-lite with hooks)
+- Add some more animations/transitions (eye-candy)
+- Add E2E-tests (e.g.: cypress)
