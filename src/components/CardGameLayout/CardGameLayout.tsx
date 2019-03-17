@@ -33,14 +33,16 @@ const Container = styled.div`
 `;
 
 interface CardGameLayoutProps {
-    store: CardGameStore
+    store?: CardGameStore
 }
 
-export const CardGameLayout: FunctionComponent<CardGameLayoutProps> = inject('store')(observer(({ store }: CardGameLayoutProps): ReactElement => {
+export const CardGameLayoutComponent: FunctionComponent<CardGameLayoutProps> = ({ store = new CardGameStore }: CardGameLayoutProps): ReactElement => {
     return (
         <Container player={store.player}>
             <CardDetails />
             <CardControls />
             <CardOverview />
         </Container>)
-}));
+};
+
+export const CardGameLayout = inject('store')(observer(CardGameLayoutComponent))

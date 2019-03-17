@@ -33,7 +33,7 @@ export class CardGameStore {
             this._players = yield fetchPlayers();
         }
         catch (error) {
-            console.error('Could not fetch players');
+            //console.error('Could not fetch players');
         }
         finally {
             this.isFetching = false;
@@ -51,7 +51,7 @@ export class CardGameStore {
             }
         }
         catch (error) {
-            console.error(error, 'Could not save playerSelection');
+            //console.error(error, 'Could not save playerSelection');
         }
         finally {
             this.isSaving = false;

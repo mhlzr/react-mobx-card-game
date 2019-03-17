@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardGameLayout has a snapshot 1`] = `
+<styled.div
+  player={null}
+>
+  <inject-_class-with-store />
+  <inject-_class-with-store />
+  <inject-_class-with-store />
+</styled.div>
+`;

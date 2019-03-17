@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardGame has a snapshot 1`] = `
+<Provider
+  store={
+    CardGameStore {
+      "_players": Array [],
+      "fetchPlayers": [Function],
+      "isFetching": true,
+      "isSaving": false,
+      "player": null,
+      "playerSortation": null,
+      "savePlayerSelection": [Function],
+    }
+  }
+>
+  <inject-_class-with-store />
+</Provider>
+`;
