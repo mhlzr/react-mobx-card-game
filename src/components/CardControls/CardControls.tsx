@@ -1,4 +1,4 @@
-import React, { ReactElement, FunctionComponent, StatelessComponent } from 'react';
+import React, { ReactElement, FunctionComponent } from 'react';
 import styled from 'styled-components';
 import { observer, inject } from 'mobx-react';
 

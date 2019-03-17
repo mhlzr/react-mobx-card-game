@@ -1,31 +1,326 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`CardDetails has a snapshot 1`] = `
-<Spring
-  config={
+<Component
+  store={
     Object {
-      "friction": 26,
-      "tension": 170,
-    }
-  }
-  force={false}
-  from={
-    Object {
-      "maxHeight": "0",
-      "opacity": 0,
-    }
-  }
-  immediate={false}
-  inject={[Function]}
-  native={false}
-  reset={false}
-  to={
-    Object {
-      "maxHeight": "auto",
-      "opacity": 1,
+      "_players": Array [],
+      "fetchPlayers": [MockFunction],
+      "isFetching": false,
+      "isSaving": false,
+      "player": Player {
+        "alias": "Dreamlurk The Unstoppable",
+        "asset": "Foghammer Lead",
+        "name": "Brianna Forbes",
+      },
+      "playerSortation": null,
+      "players": Array [
+        Player {
+          "alias": "Dreamlurk The Unstoppable",
+          "asset": "Foghammer Lead",
+          "name": "Brianna Forbes",
+        },
+        Player {
+          "alias": "Crystaldash",
+          "asset": "Secret Glowquake Gold",
+          "name": "Darcy Candice Ball",
+        },
+        Player {
+          "alias": "Speedsoul",
+          "asset": "Shifting Rainshadow Iron",
+          "name": "Hillary Gibbs",
+        },
+        Player {
+          "alias": "Seekvenom The Mystic",
+          "asset": "Valkyries' Opal Adamant",
+          "name": "Elva Becky Hammond",
+        },
+        Player {
+          "alias": "Coincurse The Ghoul",
+          "asset": "Jewelevil Bronze Of Goddesses",
+          "name": "Enid Rose",
+        },
+        Player {
+          "alias": "Skulldart",
+          "asset": "Yellow Orichalcum Of Paladins",
+          "name": "Esmeralda Carrillo",
+        },
+      ],
+      "savePlayerSelection": [MockFunction],
     }
   }
 >
-  <Component />
-</Spring>
+  <Spring
+    config={
+      Object {
+        "friction": 26,
+        "tension": 170,
+      }
+    }
+    force={false}
+    from={
+      Object {
+        "maxHeight": "0",
+        "opacity": 0,
+      }
+    }
+    immediate={false}
+    inject={[Function]}
+    native={false}
+    reset={false}
+    to={
+      Object {
+        "maxHeight": "auto",
+        "opacity": 1,
+      }
+    }
+  >
+    <styled.section
+      style={
+        Object {
+          "maxHeight": "0",
+          "opacity": 0,
+        }
+      }
+    >
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bwzfXH",
+              "isStatic": true,
+              "lastClassName": "cPleJF",
+              "rules": Array [
+                "
+    border: 1px solid var(--secondary-color);
+    grid-area: details;
+    padding: 1em;
+    overflow: hidden;
+",
+              ],
+            },
+            "displayName": "styled.section",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bwzfXH",
+            "target": "section",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+        style={
+          Object {
+            "maxHeight": "0",
+            "opacity": 0,
+          }
+        }
+      >
+        <section
+          className="sc-bwzfXH cPleJF"
+          style={
+            Object {
+              "maxHeight": "0",
+              "opacity": 0,
+            }
+          }
+        >
+          <Component>
+            <styled.h1>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "sc-bdVaJa",
+                      "isStatic": true,
+                      "lastClassName": "hdRpnz",
+                      "rules": Array [
+                        "
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+",
+                      ],
+                    },
+                    "displayName": "styled.h1",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "sc-bdVaJa",
+                    "target": "h1",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <h1
+                  className="sc-bdVaJa hdRpnz"
+                >
+                  Details
+                </h1>
+              </StyledComponent>
+            </styled.h1>
+          </Component>
+          <styled.ul>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-htpNat",
+                    "isStatic": true,
+                    "lastClassName": "bWYfNF",
+                    "rules": Array [
+                      "
+    font-size: 1.5em;
+    list-style: none;
+    margin: 1em 0;
+    padding: 0;
+",
+                    ],
+                  },
+                  "displayName": "styled.ul",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-htpNat",
+                  "target": "ul",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <ul
+                className="sc-htpNat bWYfNF"
+              >
+                <styled.li>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": true,
+                          "lastClassName": "MPdNl",
+                          "rules": Array [
+                            "
+    &:before {
+        content: '—';
+        padding-right: 0.5em
+    }
+",
+                          ],
+                        },
+                        "displayName": "styled.li",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <li
+                      className="sc-bxivhb MPdNl"
+                    >
+                      Brianna Forbes
+                    </li>
+                  </StyledComponent>
+                </styled.li>
+                <styled.li>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": true,
+                          "lastClassName": "MPdNl",
+                          "rules": Array [
+                            "
+    &:before {
+        content: '—';
+        padding-right: 0.5em
+    }
+",
+                          ],
+                        },
+                        "displayName": "styled.li",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <li
+                      className="sc-bxivhb MPdNl"
+                    >
+                      Dreamlurk The Unstoppable
+                    </li>
+                  </StyledComponent>
+                </styled.li>
+                <styled.li>
+                  <StyledComponent
+                    forwardedComponent={
+                      Object {
+                        "$$typeof": Symbol(react.forward_ref),
+                        "attrs": Array [],
+                        "componentStyle": ComponentStyle {
+                          "componentId": "sc-bxivhb",
+                          "isStatic": true,
+                          "lastClassName": "MPdNl",
+                          "rules": Array [
+                            "
+    &:before {
+        content: '—';
+        padding-right: 0.5em
+    }
+",
+                          ],
+                        },
+                        "displayName": "styled.li",
+                        "foldedComponentIds": Array [],
+                        "render": [Function],
+                        "styledComponentId": "sc-bxivhb",
+                        "target": "li",
+                        "toString": [Function],
+                        "warnTooManyClasses": [Function],
+                        "withComponent": [Function],
+                      }
+                    }
+                    forwardedRef={null}
+                  >
+                    <li
+                      className="sc-bxivhb MPdNl"
+                    >
+                      Foghammer Lead
+                    </li>
+                  </StyledComponent>
+                </styled.li>
+              </ul>
+            </StyledComponent>
+          </styled.ul>
+        </section>
+      </StyledComponent>
+    </styled.section>
+  </Spring>
+</Component>
 `;
