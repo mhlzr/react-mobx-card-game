@@ -1,4 +1,7 @@
-export default {
+import { PlayerSelectionSavingPayload } from "../players";
+import { player } from "../../models/__fixtures__/player.fixture";
+
+export const playersData = {
     "players": [
         {
             "name": "Brianna Forbes",
@@ -31,4 +34,8 @@ export default {
             "asset": "Yellow Orichalcum Of Paladins"
         }
     ]
+};
+
+export const savePlayerPayload: PlayerSelectionSavingPayload = {
+    player
 }

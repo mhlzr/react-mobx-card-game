@@ -3,6 +3,7 @@ module.exports = {
     "roots": [
         "<rootDir>/src"
     ],
+    "snapshotSerializers": ["enzyme-to-json/serializer"],
     "setupFilesAfterEnv": ["<rootDir>/test-setup.ts"],
     "transform": {
         "^.+\\.tsx?$": "ts-jest"

@@ -1,7 +1,10 @@
 import React, { ReactElement, FunctionComponent } from 'react';
 import { observer, inject } from 'mobx-react';
 import styled from 'styled-components';
-import { Spring } from 'react-spring/renderprops';
+
+// As jest & babel have some toruble with default renderprops, .cjs is imported
+// @see https://github.com/babel/babel/issues/9543 
+import { Spring } from 'react-spring/renderprops.cjs';
 
 import { Headline } from '../Headline/Headline';
 import { CardGameStore } from 'src/stores/CardGameStore';
@@ -31,7 +34,7 @@ interface CardDetailsProps {
     store: CardGameStore;
 }
 
-export const CardDetails: FunctionComponent<CardDetailsProps> = inject('store')(observer(({ store }: CardDetailsProps): ReactElement | null => {
+export const CardDetailsComponent: FunctionComponent<CardDetailsProps> = ({ store }: CardDetailsProps): ReactElement | null => {
     const { player } = store;
 
     if (!player) {
@@ -50,4 +53,6 @@ export const CardDetails: FunctionComponent<CardDetailsProps> = inject('store')(
             </Section>
         }</Spring>
     )
-}));
+};
+
+export const CardDetails = inject('store')(observer(CardDetailsComponent));

@@ -32,7 +32,7 @@ interface CardControlsProps {
     store: CardGameStore
 }
 
-export const CardControls: FunctionComponent<CardControlsProps> = inject('store')(observer(({ store }: CardControlsProps): ReactElement => {
+export const CardControlsComponent: FunctionComponent<CardControlsProps> = ({ store }: CardControlsProps): ReactElement => {
     const { player, isSaving } = store;
 
     const onSortAscendingClick = () => {
@@ -60,4 +60,6 @@ export const CardControls: FunctionComponent<CardControlsProps> = inject('store'
             </Controls>
         </Section>
     )
-}));
+};
+
+export const CardControls = inject('store')(observer(CardControlsComponent));

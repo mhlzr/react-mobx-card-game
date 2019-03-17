@@ -1,3 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardControls has a snapshot 1`] = `ShallowWrapper {}`;
+exports[`CardControls has a snapshot 1`] = `
+<_class
+  store={
+    Object {
+      "_players": Array [],
+      "fetchPlayers": [MockFunction],
+      "isFetching": false,
+      "isSaving": false,
+      "player": null,
+      "playerSortation": null,
+      "players": Array [
+        Player {
+          "alias": "Dreamlurk The Unstoppable",
+          "asset": "Foghammer Lead",
+          "name": "Brianna Forbes",
+        },
+        Player {
+          "alias": "Crystaldash",
+          "asset": "Secret Glowquake Gold",
+          "name": "Darcy Candice Ball",
+        },
+        Player {
+          "alias": "Speedsoul",
+          "asset": "Shifting Rainshadow Iron",
+          "name": "Hillary Gibbs",
+        },
+        Player {
+          "alias": "Seekvenom The Mystic",
+          "asset": "Valkyries' Opal Adamant",
+          "name": "Elva Becky Hammond",
+        },
+        Player {
+          "alias": "Coincurse The Ghoul",
+          "asset": "Jewelevil Bronze Of Goddesses",
+          "name": "Enid Rose",
+        },
+        Player {
+          "alias": "Skulldart",
+          "asset": "Yellow Orichalcum Of Paladins",
+          "name": "Esmeralda Carrillo",
+        },
+      ],
+      "savePlayerSelection": [MockFunction],
+    }
+  }
+/>
+`;
