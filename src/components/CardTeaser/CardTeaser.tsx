@@ -1,6 +1,6 @@
 import React, { ReactElement, FunctionComponent } from 'react';
 import styled from 'styled-components';
-import { Player } from 'src/models/Player';
+import { Player } from '../../models/Player';
 import { Button } from '../Button/Button';
 
 const StyledButton = styled(Button)`

@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import { Spring } from 'react-spring/renderprops.cjs';
 
 import { Headline } from '../Headline/Headline';
-import { CardGameStore } from 'src/stores/CardGameStore';
+import { CardGameStore } from '../../stores/CardGameStore';
 
 const Section = styled.section`
     border: 1px solid var(--secondary-color);
@@ -31,10 +31,10 @@ export const ListItem = styled.li`
 `
 
 interface CardDetailsProps {
-    store: CardGameStore;
+    store?: CardGameStore;
 }
 
-export const CardDetailsComponent: FunctionComponent<CardDetailsProps> = ({ store }: CardDetailsProps): ReactElement | null => {
+export const CardDetailsComponent: FunctionComponent<CardDetailsProps> = ({ store = new CardGameStore() }: CardDetailsProps): ReactElement | null => {
     const { player } = store;
 
     if (!player) {

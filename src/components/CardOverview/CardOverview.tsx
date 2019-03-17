@@ -37,10 +37,10 @@ export const ListItem = styled.li`
 `;
 
 interface CardOverviewProps {
-    store: CardGameStore;
+    store?: CardGameStore;
 }
 
-export const CardOverviewComponent: FunctionComponent<CardOverviewProps> = ({ store }: CardOverviewProps): ReactElement | null => {
+export const CardOverviewComponent: FunctionComponent<CardOverviewProps> = ({ store = new CardGameStore() }: CardOverviewProps): ReactElement | null => {
 
     const onPlayerSelect = (player: Player) => {
         store.player = player;

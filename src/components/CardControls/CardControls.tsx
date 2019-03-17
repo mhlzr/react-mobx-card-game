@@ -29,10 +29,10 @@ const Controls = styled.div`
 `;
 
 interface CardControlsProps {
-    store: CardGameStore
+    store?: CardGameStore
 }
 
-export const CardControlsComponent: FunctionComponent<CardControlsProps> = ({ store }: CardControlsProps): ReactElement => {
+export const CardControlsComponent: FunctionComponent<CardControlsProps> = ({ store = new CardGameStore() }: CardControlsProps): ReactElement => {
     const { player, isSaving } = store;
 
     const onSortAscendingClick = () => {
