@@ -1,6 +1,10 @@
-import { observable, flow, computed } from 'mobx';
+import { observable, flow, computed, configure } from 'mobx';
 import { Player } from '../models/Player';
 import { fetchPlayers, savePlayerSelection, PlayerSelectionSavingPayload } from '../api/players';
+
+/*configure({
+    enforceActions: 'always'
+});*/
 
 export enum HTTP_STATUS_RESPONSE {
     SUCCESS = 'success',
@@ -19,8 +23,8 @@ export class CardGameStore {
     @observable playerSortation: PLAYER_SORTATION | null = null;
     @observable player: Player | null = null;
 
-    @observable isFetching: Boolean = false;
-    @observable isSaving: Boolean = false;
+    @observable isFetching: boolean = false;
+    @observable isSaving: boolean = false;
 
     fetchPlayers = flow(function* (this: CardGameStore) {
         this.isFetching = true;

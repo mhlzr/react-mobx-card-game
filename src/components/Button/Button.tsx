@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactElement } from 'react';
+import React, { FunctionComponent, ReactElement, ReactNode } from 'react';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
@@ -30,7 +30,7 @@ export interface ButtonProps {
     type?: string;
     disabled?: boolean;
     onClick?(): void;
-    children: JSX.Element[] | JSX.Element | string;
+    children: ReactNode;
     selected?: boolean,
 }
 

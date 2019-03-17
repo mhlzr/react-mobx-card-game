@@ -1,7 +1,9 @@
 module.exports = {
+    "automock": false,
     "roots": [
         "<rootDir>/src"
     ],
+    "setupFilesAfterEnv": ["<rootDir>/test-setup.ts"],
     "transform": {
         "^.+\\.tsx?$": "ts-jest"
     },

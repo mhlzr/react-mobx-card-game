@@ -7,7 +7,9 @@
         "build": "rimraf ./dist/ && webpack --mode=production",
         "serve": "http-server ./dist",
         "start": "webpack-dev-server --mode=development",
-        "test": "jest"
+        "test": "jest",
+        "test:watch": "npm test -- --watchAll",
+        "test:coverage": "npm test -- --coverage"
     },
     "repository": {
         "type": "git",
@@ -42,6 +44,9 @@
         "@babel/plugin-syntax-dynamic-import": "^7.2.0",
         "@babel/preset-react": "^7.0.0",
         "@babel/preset-typescript": "^7.3.3",
+        "@types/enzyme": "^3.9.0",
+        "@types/enzyme-adapter-react-16": "^1.0.5",
+        "@types/fetch-mock": "^7.2.3",
         "@types/jest": "^24.0.11",
         "@types/react": "^16.8.8",
         "@types/react-dom": "^16.8.2",
@@ -55,6 +60,8 @@
         "copy-webpack-plugin": "^5.0.1",
         "css-loader": "^2.1.1",
         "cssnano": "^4.1.10",
+        "enzyme": "^3.9.0",
+        "enzyme-adapter-react-16": "^1.11.2",
         "eslint": "^5.15.1",
         "eslint-config-prettier": "^4.1.0",
         "eslint-config-standard": "^12.0.0",
@@ -64,6 +71,7 @@
         "html-webpack-plugin": "^3.2.0",
         "http-server": "^0.11.1",
         "jest": "^24.5.0",
+        "jest-fetch-mock": "^2.1.1",
         "mini-css-extract-plugin": "^0.5.0",
         "postcss-loader": "^3.0.0",
         "preload-webpack-plugin": "^3.0.0-beta.3",
