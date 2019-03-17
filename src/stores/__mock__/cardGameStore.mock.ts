@@ -12,3 +12,15 @@ export const cardGameStore: CardGameStore = {
     savePlayerSelection: jest.fn(),
     players: playersData.players.map(playerData => new Player(playerData))
 };
+
+
+export const emptyCardGameStore: CardGameStore = {
+    player: null,
+    _players: [],
+    playerSortation: null,
+    isFetching: false,
+    isSaving: false,
+    fetchPlayers: jest.fn(),
+    savePlayerSelection: jest.fn(),
+    players: []
+};

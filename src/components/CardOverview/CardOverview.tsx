@@ -4,7 +4,7 @@ import { observer, inject } from 'mobx-react';
 
 import { Headline } from '../Headline/Headline';
 import { CardTeaser } from '../CardTeaser/CardTeaser';
-import { Player, PlayerType } from 'src/models/Player';
+import { Player } from '../../models/Player';
 import { CardGameStore } from '../../stores/CardGameStore';
 
 const Section = styled.section`
@@ -22,10 +22,10 @@ const List = styled.ul`
     padding: 0;
 `;
 
-const ListItem = styled.li`
+// padding of 4 px, so the content (e.g.: Button) can have a visible outline
+export const ListItem = styled.li`
     display: block;
     overflow: hidden;
-    // So the content (e.g.: Button) can have a visible outline
     padding: 4px;
     transition: 0.16s transform cubic-bezier(.17,.67,.05,1.02);
    
@@ -40,17 +40,21 @@ interface CardOverviewProps {
     store: CardGameStore;
 }
 
-export const CardOverview: FunctionComponent<CardOverviewProps> = inject('store')(observer(({ store }: CardOverviewProps): ReactElement => {
+export const CardOverviewComponent: FunctionComponent<CardOverviewProps> = ({ store }: CardOverviewProps): ReactElement | null => {
 
     const onPlayerSelect = (player: Player) => {
         store.player = player;
+    }
+
+    if (!Array.isArray(store.players) || !store.players.length) {
+        return null;
     }
 
     return (
         <Section>
             <Headline>Overview</Headline>
             <List>
-                {store.players.map((player: PlayerType, index: number) => (
+                {store.players.map((player: Player, index: number) => (
                     <ListItem key={index}>
                         <CardTeaser player={player} selected={store.player === player} onSelect={onPlayerSelect}></CardTeaser>
                     </ListItem>))
@@ -58,4 +62,6 @@ export const CardOverview: FunctionComponent<CardOverviewProps> = inject('store'
             </List>
         </Section>
     )
-}));
+};
+
+export const CardOverview = inject('store')(observer(CardOverviewComponent));

@@ -32,7 +32,7 @@ interface CardTeaserProps {
 export const CardTeaser: FunctionComponent<CardTeaserProps> = ({ player, selected, onSelect }): ReactElement => {
     const { name, alias, asset } = player;
     return (
-        <StyledButton selected={selected} tabIndex={0} onClick={() => onSelect(player)}>
+        <StyledButton selected={selected} onClick={() => onSelect(player)}>
             <Text>{name}</Text>
             <Text>{alias}</Text>
             <Text>{asset}</Text>

@@ -1,0 +1,1886 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardOverview has a snapshot 1`] = `
+<Component
+  store={
+    Object {
+      "_players": Array [],
+      "fetchPlayers": [MockFunction],
+      "isFetching": false,
+      "isSaving": false,
+      "player": null,
+      "playerSortation": null,
+      "players": Array [
+        Player {
+          "alias": "Dreamlurk The Unstoppable",
+          "asset": "Foghammer Lead",
+          "name": "Brianna Forbes",
+        },
+        Player {
+          "alias": "Crystaldash",
+          "asset": "Secret Glowquake Gold",
+          "name": "Darcy Candice Ball",
+        },
+        Player {
+          "alias": "Speedsoul",
+          "asset": "Shifting Rainshadow Iron",
+          "name": "Hillary Gibbs",
+        },
+        Player {
+          "alias": "Seekvenom The Mystic",
+          "asset": "Valkyries' Opal Adamant",
+          "name": "Elva Becky Hammond",
+        },
+        Player {
+          "alias": "Coincurse The Ghoul",
+          "asset": "Jewelevil Bronze Of Goddesses",
+          "name": "Enid Rose",
+        },
+        Player {
+          "alias": "Skulldart",
+          "asset": "Yellow Orichalcum Of Paladins",
+          "name": "Esmeralda Carrillo",
+        },
+      ],
+      "savePlayerSelection": [MockFunction],
+    }
+  }
+>
+  <styled.section>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-ifAKCX",
+            "isStatic": true,
+            "lastClassName": "daJNrm",
+            "rules": Array [
+              "
+    grid-area: overview;
+",
+            ],
+          },
+          "displayName": "styled.section",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-ifAKCX",
+          "target": "section",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <section
+        className="sc-ifAKCX daJNrm"
+      >
+        <Component>
+          <styled.h1>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-bdVaJa",
+                    "isStatic": true,
+                    "lastClassName": "hdRpnz",
+                    "rules": Array [
+                      "
+    font-size: 2em;
+    font-weight: normal;
+    margin: 0;
+",
+                    ],
+                  },
+                  "displayName": "styled.h1",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-bdVaJa",
+                  "target": "h1",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <h1
+                className="sc-bdVaJa hdRpnz"
+              >
+                Overview
+              </h1>
+            </StyledComponent>
+          </styled.h1>
+        </Component>
+        <styled.ul>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-EHOje",
+                  "isStatic": true,
+                  "lastClassName": "fUxUgt",
+                  "rules": Array [
+                    "
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    list-style: none;
+    margin: 1em 0 0 0;
+    padding: 0;
+",
+                  ],
+                },
+                "displayName": "styled.ul",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-EHOje",
+                "target": "ul",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <ul
+              className="sc-EHOje fUxUgt"
+            >
+              <styled.li
+                key="0"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bZQynM",
+                        "isStatic": true,
+                        "lastClassName": "dfWzsu",
+                        "rules": Array [
+                          "
+    display: block;
+    overflow: hidden;
+    padding: 4px;
+    transition: 0.16s transform cubic-bezier(.17,.67,.05,1.02);
+   
+    &:hover,
+    &:focus,
+    &:focus-within {
+        transform: scale(1.06)
+    }
+",
+                        ],
+                      },
+                      "displayName": "styled.li",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bZQynM",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <li
+                    className="sc-bZQynM dfWzsu"
+                  >
+                    <Component
+                      onSelect={[Function]}
+                      player={
+                        Player {
+                          "alias": "Dreamlurk The Unstoppable",
+                          "asset": "Foghammer Lead",
+                          "name": "Brianna Forbes",
+                        }
+                      }
+                      selected={false}
+                    >
+                      <Styled(Component)
+                        onClick={[Function]}
+                        selected={false}
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": true,
+                                "lastClassName": "cCInDf",
+                                "rules": Array [
+                                  "
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 1em;
+    position: relative;
+    text-align: left;
+    text-overflow: ellipsis;
+    transform-style: preserve-3d;
+    white-space: nowrap;
+    width: 100%;
+",
+                                ],
+                              },
+                              "displayName": "Styled(Component)",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          <Component
+                            className="sc-htpNat cCInDf"
+                            onClick={[Function]}
+                            selected={false}
+                          >
+                            <styled.button
+                              aria-pressed={false}
+                              className="sc-htpNat cCInDf"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <StyledComponent
+                                aria-pressed={false}
+                                className="sc-htpNat cCInDf"
+                                disabled={false}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": true,
+                                      "lastClassName": "bNtAHY",
+                                      "rules": Array [
+                                        "
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid currentColor;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0.4em 0.5em;
+    transition: opacity 0.08s ease-out;
+
+    &[aria-pressed=true]{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    &[disabled]{
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onClick={[Function]}
+                              >
+                                <button
+                                  aria-pressed={false}
+                                  className="sc-htpNat cCInDf sc-bwzfXH bNtAHY"
+                                  disabled={false}
+                                  onClick={[Function]}
+                                >
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Brianna Forbes
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Dreamlurk The Unstoppable
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Foghammer Lead
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                </button>
+                              </StyledComponent>
+                            </styled.button>
+                          </Component>
+                        </StyledComponent>
+                      </Styled(Component)>
+                    </Component>
+                  </li>
+                </StyledComponent>
+              </styled.li>
+              <styled.li
+                key="1"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bZQynM",
+                        "isStatic": true,
+                        "lastClassName": "dfWzsu",
+                        "rules": Array [
+                          "
+    display: block;
+    overflow: hidden;
+    padding: 4px;
+    transition: 0.16s transform cubic-bezier(.17,.67,.05,1.02);
+   
+    &:hover,
+    &:focus,
+    &:focus-within {
+        transform: scale(1.06)
+    }
+",
+                        ],
+                      },
+                      "displayName": "styled.li",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bZQynM",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <li
+                    className="sc-bZQynM dfWzsu"
+                  >
+                    <Component
+                      onSelect={[Function]}
+                      player={
+                        Player {
+                          "alias": "Crystaldash",
+                          "asset": "Secret Glowquake Gold",
+                          "name": "Darcy Candice Ball",
+                        }
+                      }
+                      selected={false}
+                    >
+                      <Styled(Component)
+                        onClick={[Function]}
+                        selected={false}
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": true,
+                                "lastClassName": "cCInDf",
+                                "rules": Array [
+                                  "
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 1em;
+    position: relative;
+    text-align: left;
+    text-overflow: ellipsis;
+    transform-style: preserve-3d;
+    white-space: nowrap;
+    width: 100%;
+",
+                                ],
+                              },
+                              "displayName": "Styled(Component)",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          <Component
+                            className="sc-htpNat cCInDf"
+                            onClick={[Function]}
+                            selected={false}
+                          >
+                            <styled.button
+                              aria-pressed={false}
+                              className="sc-htpNat cCInDf"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <StyledComponent
+                                aria-pressed={false}
+                                className="sc-htpNat cCInDf"
+                                disabled={false}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": true,
+                                      "lastClassName": "bNtAHY",
+                                      "rules": Array [
+                                        "
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid currentColor;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0.4em 0.5em;
+    transition: opacity 0.08s ease-out;
+
+    &[aria-pressed=true]{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    &[disabled]{
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onClick={[Function]}
+                              >
+                                <button
+                                  aria-pressed={false}
+                                  className="sc-htpNat cCInDf sc-bwzfXH bNtAHY"
+                                  disabled={false}
+                                  onClick={[Function]}
+                                >
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Darcy Candice Ball
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Crystaldash
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Secret Glowquake Gold
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                </button>
+                              </StyledComponent>
+                            </styled.button>
+                          </Component>
+                        </StyledComponent>
+                      </Styled(Component)>
+                    </Component>
+                  </li>
+                </StyledComponent>
+              </styled.li>
+              <styled.li
+                key="2"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bZQynM",
+                        "isStatic": true,
+                        "lastClassName": "dfWzsu",
+                        "rules": Array [
+                          "
+    display: block;
+    overflow: hidden;
+    padding: 4px;
+    transition: 0.16s transform cubic-bezier(.17,.67,.05,1.02);
+   
+    &:hover,
+    &:focus,
+    &:focus-within {
+        transform: scale(1.06)
+    }
+",
+                        ],
+                      },
+                      "displayName": "styled.li",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bZQynM",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <li
+                    className="sc-bZQynM dfWzsu"
+                  >
+                    <Component
+                      onSelect={[Function]}
+                      player={
+                        Player {
+                          "alias": "Speedsoul",
+                          "asset": "Shifting Rainshadow Iron",
+                          "name": "Hillary Gibbs",
+                        }
+                      }
+                      selected={false}
+                    >
+                      <Styled(Component)
+                        onClick={[Function]}
+                        selected={false}
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": true,
+                                "lastClassName": "cCInDf",
+                                "rules": Array [
+                                  "
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 1em;
+    position: relative;
+    text-align: left;
+    text-overflow: ellipsis;
+    transform-style: preserve-3d;
+    white-space: nowrap;
+    width: 100%;
+",
+                                ],
+                              },
+                              "displayName": "Styled(Component)",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          <Component
+                            className="sc-htpNat cCInDf"
+                            onClick={[Function]}
+                            selected={false}
+                          >
+                            <styled.button
+                              aria-pressed={false}
+                              className="sc-htpNat cCInDf"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <StyledComponent
+                                aria-pressed={false}
+                                className="sc-htpNat cCInDf"
+                                disabled={false}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": true,
+                                      "lastClassName": "bNtAHY",
+                                      "rules": Array [
+                                        "
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid currentColor;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0.4em 0.5em;
+    transition: opacity 0.08s ease-out;
+
+    &[aria-pressed=true]{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    &[disabled]{
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onClick={[Function]}
+                              >
+                                <button
+                                  aria-pressed={false}
+                                  className="sc-htpNat cCInDf sc-bwzfXH bNtAHY"
+                                  disabled={false}
+                                  onClick={[Function]}
+                                >
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Hillary Gibbs
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Speedsoul
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Shifting Rainshadow Iron
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                </button>
+                              </StyledComponent>
+                            </styled.button>
+                          </Component>
+                        </StyledComponent>
+                      </Styled(Component)>
+                    </Component>
+                  </li>
+                </StyledComponent>
+              </styled.li>
+              <styled.li
+                key="3"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bZQynM",
+                        "isStatic": true,
+                        "lastClassName": "dfWzsu",
+                        "rules": Array [
+                          "
+    display: block;
+    overflow: hidden;
+    padding: 4px;
+    transition: 0.16s transform cubic-bezier(.17,.67,.05,1.02);
+   
+    &:hover,
+    &:focus,
+    &:focus-within {
+        transform: scale(1.06)
+    }
+",
+                        ],
+                      },
+                      "displayName": "styled.li",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bZQynM",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <li
+                    className="sc-bZQynM dfWzsu"
+                  >
+                    <Component
+                      onSelect={[Function]}
+                      player={
+                        Player {
+                          "alias": "Seekvenom The Mystic",
+                          "asset": "Valkyries' Opal Adamant",
+                          "name": "Elva Becky Hammond",
+                        }
+                      }
+                      selected={false}
+                    >
+                      <Styled(Component)
+                        onClick={[Function]}
+                        selected={false}
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": true,
+                                "lastClassName": "cCInDf",
+                                "rules": Array [
+                                  "
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 1em;
+    position: relative;
+    text-align: left;
+    text-overflow: ellipsis;
+    transform-style: preserve-3d;
+    white-space: nowrap;
+    width: 100%;
+",
+                                ],
+                              },
+                              "displayName": "Styled(Component)",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          <Component
+                            className="sc-htpNat cCInDf"
+                            onClick={[Function]}
+                            selected={false}
+                          >
+                            <styled.button
+                              aria-pressed={false}
+                              className="sc-htpNat cCInDf"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <StyledComponent
+                                aria-pressed={false}
+                                className="sc-htpNat cCInDf"
+                                disabled={false}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": true,
+                                      "lastClassName": "bNtAHY",
+                                      "rules": Array [
+                                        "
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid currentColor;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0.4em 0.5em;
+    transition: opacity 0.08s ease-out;
+
+    &[aria-pressed=true]{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    &[disabled]{
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onClick={[Function]}
+                              >
+                                <button
+                                  aria-pressed={false}
+                                  className="sc-htpNat cCInDf sc-bwzfXH bNtAHY"
+                                  disabled={false}
+                                  onClick={[Function]}
+                                >
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Elva Becky Hammond
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Seekvenom The Mystic
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Valkyries' Opal Adamant
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                </button>
+                              </StyledComponent>
+                            </styled.button>
+                          </Component>
+                        </StyledComponent>
+                      </Styled(Component)>
+                    </Component>
+                  </li>
+                </StyledComponent>
+              </styled.li>
+              <styled.li
+                key="4"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bZQynM",
+                        "isStatic": true,
+                        "lastClassName": "dfWzsu",
+                        "rules": Array [
+                          "
+    display: block;
+    overflow: hidden;
+    padding: 4px;
+    transition: 0.16s transform cubic-bezier(.17,.67,.05,1.02);
+   
+    &:hover,
+    &:focus,
+    &:focus-within {
+        transform: scale(1.06)
+    }
+",
+                        ],
+                      },
+                      "displayName": "styled.li",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bZQynM",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <li
+                    className="sc-bZQynM dfWzsu"
+                  >
+                    <Component
+                      onSelect={[Function]}
+                      player={
+                        Player {
+                          "alias": "Coincurse The Ghoul",
+                          "asset": "Jewelevil Bronze Of Goddesses",
+                          "name": "Enid Rose",
+                        }
+                      }
+                      selected={false}
+                    >
+                      <Styled(Component)
+                        onClick={[Function]}
+                        selected={false}
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": true,
+                                "lastClassName": "cCInDf",
+                                "rules": Array [
+                                  "
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 1em;
+    position: relative;
+    text-align: left;
+    text-overflow: ellipsis;
+    transform-style: preserve-3d;
+    white-space: nowrap;
+    width: 100%;
+",
+                                ],
+                              },
+                              "displayName": "Styled(Component)",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          <Component
+                            className="sc-htpNat cCInDf"
+                            onClick={[Function]}
+                            selected={false}
+                          >
+                            <styled.button
+                              aria-pressed={false}
+                              className="sc-htpNat cCInDf"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <StyledComponent
+                                aria-pressed={false}
+                                className="sc-htpNat cCInDf"
+                                disabled={false}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": true,
+                                      "lastClassName": "bNtAHY",
+                                      "rules": Array [
+                                        "
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid currentColor;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0.4em 0.5em;
+    transition: opacity 0.08s ease-out;
+
+    &[aria-pressed=true]{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    &[disabled]{
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onClick={[Function]}
+                              >
+                                <button
+                                  aria-pressed={false}
+                                  className="sc-htpNat cCInDf sc-bwzfXH bNtAHY"
+                                  disabled={false}
+                                  onClick={[Function]}
+                                >
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Enid Rose
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Coincurse The Ghoul
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Jewelevil Bronze Of Goddesses
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                </button>
+                              </StyledComponent>
+                            </styled.button>
+                          </Component>
+                        </StyledComponent>
+                      </Styled(Component)>
+                    </Component>
+                  </li>
+                </StyledComponent>
+              </styled.li>
+              <styled.li
+                key="5"
+              >
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bZQynM",
+                        "isStatic": true,
+                        "lastClassName": "dfWzsu",
+                        "rules": Array [
+                          "
+    display: block;
+    overflow: hidden;
+    padding: 4px;
+    transition: 0.16s transform cubic-bezier(.17,.67,.05,1.02);
+   
+    &:hover,
+    &:focus,
+    &:focus-within {
+        transform: scale(1.06)
+    }
+",
+                        ],
+                      },
+                      "displayName": "styled.li",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bZQynM",
+                      "target": "li",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <li
+                    className="sc-bZQynM dfWzsu"
+                  >
+                    <Component
+                      onSelect={[Function]}
+                      player={
+                        Player {
+                          "alias": "Skulldart",
+                          "asset": "Yellow Orichalcum Of Paladins",
+                          "name": "Esmeralda Carrillo",
+                        }
+                      }
+                      selected={false}
+                    >
+                      <Styled(Component)
+                        onClick={[Function]}
+                        selected={false}
+                      >
+                        <StyledComponent
+                          forwardedComponent={
+                            Object {
+                              "$$typeof": Symbol(react.forward_ref),
+                              "attrs": Array [],
+                              "componentStyle": ComponentStyle {
+                                "componentId": "sc-htpNat",
+                                "isStatic": true,
+                                "lastClassName": "cCInDf",
+                                "rules": Array [
+                                  "
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 1em;
+    position: relative;
+    text-align: left;
+    text-overflow: ellipsis;
+    transform-style: preserve-3d;
+    white-space: nowrap;
+    width: 100%;
+",
+                                ],
+                              },
+                              "displayName": "Styled(Component)",
+                              "foldedComponentIds": Array [],
+                              "render": [Function],
+                              "styledComponentId": "sc-htpNat",
+                              "target": [Function],
+                              "toString": [Function],
+                              "warnTooManyClasses": [Function],
+                              "withComponent": [Function],
+                            }
+                          }
+                          forwardedRef={null}
+                          onClick={[Function]}
+                          selected={false}
+                        >
+                          <Component
+                            className="sc-htpNat cCInDf"
+                            onClick={[Function]}
+                            selected={false}
+                          >
+                            <styled.button
+                              aria-pressed={false}
+                              className="sc-htpNat cCInDf"
+                              disabled={false}
+                              onClick={[Function]}
+                            >
+                              <StyledComponent
+                                aria-pressed={false}
+                                className="sc-htpNat cCInDf"
+                                disabled={false}
+                                forwardedComponent={
+                                  Object {
+                                    "$$typeof": Symbol(react.forward_ref),
+                                    "attrs": Array [],
+                                    "componentStyle": ComponentStyle {
+                                      "componentId": "sc-bwzfXH",
+                                      "isStatic": true,
+                                      "lastClassName": "bNtAHY",
+                                      "rules": Array [
+                                        "
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid currentColor;
+    color: inherit;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    padding: 0.4em 0.5em;
+    transition: opacity 0.08s ease-out;
+
+    &[aria-pressed=true]{
+        background-color: var(--secondary-color);
+        color: var(--primary-color);
+    }
+
+    &[disabled]{
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+",
+                                      ],
+                                    },
+                                    "displayName": "styled.button",
+                                    "foldedComponentIds": Array [],
+                                    "render": [Function],
+                                    "styledComponentId": "sc-bwzfXH",
+                                    "target": "button",
+                                    "toString": [Function],
+                                    "warnTooManyClasses": [Function],
+                                    "withComponent": [Function],
+                                  }
+                                }
+                                forwardedRef={null}
+                                onClick={[Function]}
+                              >
+                                <button
+                                  aria-pressed={false}
+                                  className="sc-htpNat cCInDf sc-bwzfXH bNtAHY"
+                                  disabled={false}
+                                  onClick={[Function]}
+                                >
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Esmeralda Carrillo
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Skulldart
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                  <styled.span>
+                                    <StyledComponent
+                                      forwardedComponent={
+                                        Object {
+                                          "$$typeof": Symbol(react.forward_ref),
+                                          "attrs": Array [],
+                                          "componentStyle": ComponentStyle {
+                                            "componentId": "sc-bxivhb",
+                                            "isStatic": true,
+                                            "lastClassName": "ddHYBI",
+                                            "rules": Array [
+                                              "
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+",
+                                            ],
+                                          },
+                                          "displayName": "styled.span",
+                                          "foldedComponentIds": Array [],
+                                          "render": [Function],
+                                          "styledComponentId": "sc-bxivhb",
+                                          "target": "span",
+                                          "toString": [Function],
+                                          "warnTooManyClasses": [Function],
+                                          "withComponent": [Function],
+                                        }
+                                      }
+                                      forwardedRef={null}
+                                    >
+                                      <span
+                                        className="sc-bxivhb ddHYBI"
+                                      >
+                                        Yellow Orichalcum Of Paladins
+                                      </span>
+                                    </StyledComponent>
+                                  </styled.span>
+                                </button>
+                              </StyledComponent>
+                            </styled.button>
+                          </Component>
+                        </StyledComponent>
+                      </Styled(Component)>
+                    </Component>
+                  </li>
+                </StyledComponent>
+              </styled.li>
+            </ul>
+          </StyledComponent>
+        </styled.ul>
+      </section>
+    </StyledComponent>
+  </styled.section>
+</Component>
+`;

@@ -1,4 +1,4 @@
-import { RawPlayerData } from "src/api/players";
+import { RawPlayerData } from "../api/players";
 
 export class Player {
     public name: string;
