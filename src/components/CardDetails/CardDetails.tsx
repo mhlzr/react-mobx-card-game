@@ -16,14 +16,14 @@ const Section = styled.section`
     overflow: hidden;
 `;
 
-const List = styled.ul`
+export const List = styled.ul`
     font-size: 1.5em;
     list-style: none;
     margin: 1em 0;
     padding: 0;
 `;
 
-const StyledListItem = styled.li`
+export const ListItem = styled.li`
     &:before {
         content: '—';
         padding-right: 0.5em
@@ -46,9 +46,9 @@ export const CardDetailsComponent: FunctionComponent<CardDetailsProps> = ({ stor
             <Section style={props}>
                 <Headline>Details</Headline>
                 <List>
-                    <StyledListItem>{player.name}</StyledListItem>
-                    <StyledListItem>{player.alias}</StyledListItem>
-                    <StyledListItem>{player.asset}</StyledListItem>
+                    <ListItem>{player.name}</ListItem>
+                    <ListItem>{player.alias}</ListItem>
+                    <ListItem>{player.asset}</ListItem>
                 </List>
             </Section>
         }</Spring>

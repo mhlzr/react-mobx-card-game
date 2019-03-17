@@ -1,4 +1,4 @@
-import React, { ReactElement, FunctionComponent } from 'react';
+import React, { ReactElement, FunctionComponent, ReactNode } from 'react';
 import styled, { keyframes } from 'styled-components';
 
 
@@ -31,10 +31,9 @@ const Circle = styled.div`
     will-change: transform;
 `;
 
-
 interface LoadingSpinnerProps {
     className?: string;
-    children?: JSX.Element[] | JSX.Element | string;
+    children?: ReactNode;
 }
 
 export const LoadingSpinner: FunctionComponent<LoadingSpinnerProps> = ({ className, children }: LoadingSpinnerProps): ReactElement => {

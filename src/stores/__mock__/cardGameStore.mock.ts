@@ -1,7 +1,8 @@
 import { playersData } from "../../api/__fixtures__/players.fixture";
 import { Player } from "../../models/Player";
+import { CardGameStore } from "../CardGameStore";
 
-export const cardGameStore = {
+export const cardGameStore: CardGameStore = {
     player: null,
     _players: [],
     playerSortation: null,
