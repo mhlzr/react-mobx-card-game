@@ -14,10 +14,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/mhlzr/aoe-card-game.git"
+        "url": "git+https://github.com/mhlzr/react-mobx-card-game.git"
     },
     "keywords": [
-        "aoe",
         "card",
         "game",
         "coding",
@@ -26,9 +25,9 @@
     "author": "Matthieu Holzer <matthieuholzer@gmx.de>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/mhlzr/aoe-card-game/issues"
+        "url": "https://github.com/mhlzr/react-mobx-card-game/issues"
     },
-    "homepage": "https://github.com/mhlzr/aoe-card-game#readme",
+    "homepage": "https://github.com/mhlzr/react-mobx-card-game#readme",
     "dependencies": {
         "mobx": "^5.9.0",
         "mobx-react": "^5.4.3",
